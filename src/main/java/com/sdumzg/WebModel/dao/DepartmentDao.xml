@@ -8,7 +8,11 @@
         ]]>
     </insert>
 
-
+    <select id="getDepartment" resultType="com.sdumzg.WebModel.model.DepartmentModel">
+        <![CDATA[
+        SELECT * FROM department  ORDER BY id LIMIT #{page},#{pageSize}
+        ]]>
+    </select>
 
     <select id="getDepartmentAll" resultType="com.sdumzg.WebModel.model.DepartmentModel">
         <![CDATA[

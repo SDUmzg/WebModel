@@ -17,7 +17,8 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     public long addDepartment(DepartmentModel departmentModel){return departmentDao.addDepartment(departmentModel);}
     public List<DepartmentModel> getDepartment(int page, int pageSize){
-        return departmentDao.getDepartment(page,pageSize);}
+        return departmentDao.getDepartment(page,pageSize);
+    }
     public List<DepartmentModel> getDepartmentAll(){return departmentDao.getDepartmentAll();}
     public int getDepartmentCount(){return departmentDao.getDepartmentCount();}
 
